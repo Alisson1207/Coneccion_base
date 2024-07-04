@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.sql.*;
 import java.util.Scanner;
 
@@ -5,6 +6,7 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+        /*
         String url = "jdbc:mysql://localhost:3306/clase";
         String user = "root";
         String password = "123456";
@@ -13,7 +15,7 @@ public class Main {
             System.out.println("Conectado a la base de datos");
             String query = "SELECT * FROM estudiante";
                /*
-            Para buscar algo que el usuario solicite  */
+            Para buscar algo que el usuario solicite
             Scanner sc =  new Scanner(System.in);
             System.out.printf("Ingrese un nombre de usuario: ");
             String nombre = sc.nextLine();
@@ -40,5 +42,14 @@ public class Main {
         catch (SQLException e){
             System.out.println(e.getMessage());
         }
+        */
+
+        JFrame frame = new JFrame("Mi aplicación Calculadora");
+        frame.setContentPane(new form().panel);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setVisible(true);
+        frame.setLocationRelativeTo(null);
+        frame.setSize(800,600);
     }
 }
