@@ -7,7 +7,7 @@ import java.sql.SQLException;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        String url = "jdbc:mysql://localhost:3306/mibdd";
+        String url = "jdbc:mysql://localhost:3306/clase";
         String user = "root";
         String password = "123456";
 
